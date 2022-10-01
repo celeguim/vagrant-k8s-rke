@@ -1,0 +1,16 @@
+https://metallb.universe.tf/
+
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.5/config/manifests/metallb-native.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/config/manifests/metallb-native.yaml
+
+kubectl delete -f https://raw.githubusercontent.com/metallb/metallb/v0.13.5/config/manifests/metallb-native.yaml
+
+kubectl apply -f LoadBalancer.yaml
+
+
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+
+
